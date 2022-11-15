@@ -8,7 +8,7 @@ const projectsTitle = document.querySelector(".projectsTitle")
 const phones = document.querySelectorAll(".phone")
 const swe = document.querySelector(".swe")
 const ser = document.querySelector(".ser")
-const phone = document.querySelector(".phone")
+const cell = document.querySelector(".cell")
 
 for(let i = 0; i<365; i++){
 
@@ -46,5 +46,5 @@ window.addEventListener("scroll", ()=>{
   projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
   swe.style.transform = `translateX(calc(190vh - ${offsetY* 0.4}px))`
   ser.style.transform = `translateX(calc(-300vh + ${offsetY * 0.5}px))`
-  phone.style.transform = `translateX(calc(850vh - ${offsetY}px))`
+  cell.style.transform = `translateX(calc(750vh - ${offsetY}px))`
 })
