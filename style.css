@@ -1,3 +1,128 @@
+/* --- Navigationsleiste --- */
+#header-nav{
+  width:100%;
+  height:50px;
+  background-color: #FFF;
+  position: relative;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+#header-nav a > img {
+  height: 30px;
+  width:auto;
+  float:left;
+  margin: .55rem;
+}
+#header-nav ul{
+  margin:0;
+  padding:0;
+  height:100%;
+  float:right;
+}
+#header-nav ul > li{
+  display:inline-block;
+  height:100%;
+  padding:0 .4rem 0 .4rem;
+}
+#header-nav ul > li >a{
+  display:inline-block;
+  margin-top: .8rem;
+}
+
+#header-nav .container,
+#header-nav .row{
+  height:100%;
+  background-color: #FFF;
+}
+#header-nav .col-6{
+  padding: 0;
+  height:100%;
+}
+.active{
+  background-color: #7791C3;
+}
+.active a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+.active a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+.active a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+.inactive{
+  background-color: #FFF;
+}
+.inactive a:link {
+  color: #94a4c0;
+  text-decoration: none;
+}
+.inactive a:visited {
+  color: #94a4c0;
+  text-decoration: none;
+}
+.inactive a:hover {
+  color: #94a4c0;
+  text-decoration: none;
+}
+.logo-link{
+  display:inline-block;
+}
+
+/* --- Navigationsleiste responsive machen --- */
+@media (max-width:768px){
+  #desktop-nav{
+      display: none;
+  }
+  #mobile-nav{
+      display:block;
+  }
+}
+
+
+/* === Footer-Bereich ===*/
+#footer{
+  background-color: #FFFFFF;
+  height: 2.8rem;
+  color: #7791C3;
+}
+#footer .container{
+  background-color: #FFFFFF;
+}
+#footer > .container > span{
+  margin-left:1em;
+}
+#footer-nav{
+  display:inline-block;
+  float:right;
+}
+#footer-nav a{
+  text-decoration: none;
+  margin-right:1em;
+}
+#footer-nav a:link{
+  color: #7791C3;
+}
+#footer-nav a:visited{
+  color: #7791C3;
+}
+#footer-nav a:active{
+  color: #7791C3;
+}
+#footer-nav a:hover{
+  color: #7791C3;
+}
+
+/* === Footer-Bereich responsive machen ===*/
+@media (max-width: 565px){
+  #footer span{
+      display: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
