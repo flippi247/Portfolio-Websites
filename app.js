@@ -43,8 +43,8 @@ window.addEventListener("scroll", ()=>{
   jobTitleContainers[1].style.backgroundPositionY = `${-offsetY * 0.2}px`
   jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`
   jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`
-  projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
+  projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY *0.95}px))`
   swe.style.transform = `translateX(calc(190vh - ${offsetY* 0.4}px))`
   ser.style.transform = `translateX(calc(-300vh + ${offsetY * 0.5}px))`
-  cell.style.transform = `translateX(calc(750vh - ${offsetY}px))`
+  cell.style.transform = `translateX(calc(310vh - ${offsetY * 0.4}px))`
 })
