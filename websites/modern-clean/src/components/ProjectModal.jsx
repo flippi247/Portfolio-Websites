@@ -27,7 +27,6 @@ function ProjectModal({ isOpen, closeModal, project }) {
         };
     }, [isOpen]);
 
-
     return (
         <Modal
             isOpen={isOpen}
@@ -54,11 +53,11 @@ function ProjectModal({ isOpen, closeModal, project }) {
                 }
             }}
         >
-            <div style={{width: isSmallScreen ? '100%' : '50%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <div style={{width: isSmallScreen ? '100%' : '50%', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: '20px'}}>
                 <img src={project.image} alt={project.title} style={{maxWidth: '100%', maxHeight: '100%'}} />
             </div>
-            <div style={{width: isSmallScreen ? '100%' : '50%', marginLeft: isSmallScreen ? '0' : '2%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflowY: 'auto', height: '80vh'}}>
-                <div style={{}}>
+            <div style={{width: isSmallScreen ? '100%' : '50%', marginLeft: isSmallScreen ? '0' : '2%', display: 'flex', flexDirection: 'column', height: '80vh', marginTop: '20px', overflowY: 'auto', paddingBottom: '50px'}}>
+                <div style={{padding: '0 10px'}}>
                     <h5 className="title-left" style={{ marginBottom: '5%', fontSize: isSmallScreen ? '1rem' : 'initial' }}>{project.title}</h5>
                     <p className="lead" dangerouslySetInnerHTML={{ __html: project.description.replace(/\n/g, '<br />') }} style={{fontSize: isSmallScreen ? '0.8rem' : 'initial'}} />
                 </div>
@@ -72,8 +71,8 @@ function ProjectModal({ isOpen, closeModal, project }) {
                         fontSize: isSmallScreen ? '0.8rem' : '1rem',
                         cursor: 'pointer',
                         maxWidth: '200px',
-                        margin: 'auto',
-                        alignSelf: 'center'
+                        margin: '10px auto 10px',
+                        display: 'block'
                     }}
                     onClick={closeModal}
                 >
