@@ -1,0 +1,12 @@
+/* modal.css */
+
+.ProjectModalContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .ProjectModalContainer {
+        flex-direction: column;
+    }
+}
